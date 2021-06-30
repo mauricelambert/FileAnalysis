@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-""" This package analyze emergence of characters in file (to decrypt with statistics). """
+""" This package analyze emergence of characters in file (for statistics decryption). """
 
 ###################
-#    This package analyze emergence of characters in file (to decrypt with statistics).
+#    This package analyze emergence of characters in file (for statistics decryption).
 #    Copyright (C) 2021  Maurice Lambert
 
 #    This program is free software: you can redistribute it and/or modify
@@ -21,18 +21,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ###################
 
-print(
-    """
-FileAnalysis  Copyright (C) 2021  Maurice Lambert
-This program comes with ABSOLUTELY NO WARRANTY.
-This is free software, and you are welcome to redistribute it
-under certain conditions.
-"""
-)
-
 try:
-    from FileAnalysis import FileAnalysis, main as analyze
+    from FileAnalysis import main as analyze
 except ImportError:
-    from .FileAnalysis import FileAnalysis, main as analyze
+    from .FileAnalysis import main as analyze
 
 analyze()
